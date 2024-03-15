@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foyster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Poppins:wght@500&family=Trocchi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@500&family=Trocchi&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+            screens: {
+                'sm': '640px',
+                // => @media (min-width: 640px) { ... }
+
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+
+                'lg': '1024px',
+                // => @media (min-width: 1024px) { ... }
+
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+
+                'xs': '480px',
+                },
+                extend: {
+                    fontFamily: {
+                        custom: ["Contrail One", "sans-serif"],
+                        lato: ["Lato", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="box-border ">
+    <div class="main font-custom w-[1171px] m-auto max-sm:w-[585.5px] max-sm:m-auto">
+        <!-- This Nav Bar/ Top section of website! -->
+        <header class="navbar">
+            <div class="nav pt-[1.7%] flex justify-between items-center ">
+                <div class="logo max-sm:w-28"> <img src="./logo.png"></div>
+                
+                <div class="menu hidden max-sm:flex max-sm:z-[4]">
+                    <i class="fa-solid fa-bars" onclick = "Menu()"></i>
+                    <!-- <i class="fa-solid fa-xmark hidden"></i>                     -->
+                </div>
+
+                <div class="bg "></div>
+
+                <div class="itmes w-[42.5%] flex flex-col gap-y-8 p-4 max-sm:bg-[#eaeaea] max-sm:fixed max-sm:top-0 max-sm:right-0 max-sm:z-[1] max-sm:w-80 max-sm:h-96">
+                    <div class="socail-media text-sm flex justify-end max-sm:hidden">
+                        <span class="fa-stack fa-lg text-center">
+                            <i class="fa fa-circle fa-stack-2x" style="color: #0655a4 "></i>
+                            <i class="fab fa-stack-1x fa-linkedin-in fa-inverse"></i>
+                        </span>
+                        <span class="fa-stack fa-lg text-center">
+                            <i class="fa fa-circle fa-stack-2x" style="color: #0655a4 "></i>
+                            <i class="fab fa-stack-1x fa-facebook-f fa-inverse"></i>
+                        </span>
+                        <span class="fa-stack fa-lg text-center">
+                            <i class="fa fa-circle fa-stack-2x" style="color: #0655a4 "></i>
+                            <i class="fab fa-twitter fa-stack-1x  fa-inverse"></i>
+                        </span>
+                    </div>
+                    <!-- Items here! -->
+                    <ul class="flex font-custom gap-[3%] text-[20px] max-sm:text-xs max-sm:flex-col max-sm:leading-3 max-sm:mt-12 ">
+                        <a href="./index.html">
+                            <li class="text-[#0655a4]"> Home </li>
+                        </a>
+                        <span class=" rotate-12 bg-[#eaeaea] w-[2px] h-[2.5rem] text-2xl"></span>
+                        <a href="#">
+                            <li class="hover:text-[#0655a4] active:text-[#0655a4] "> About us </li>
+                        </a>
+                        <span class=" rotate-12 bg-[#eaeaea] w-[2px] h-[2.5rem] text-2xl"></span>
+                        <a href="#">
+                            <li class="hover:text-[#0655a4] active:text-[#0655a4] "> Services</li>
+                        </a>
+                        <span class=" rotate-12 bg-[#eaeaea] w-[2px] h-[2.5rem] text-2xl"></span>
+                        <a href="#">
+                            <li class="hover:text-[#0655a4] active:text-[#0655a4] "> Projects </li>
+                        </a>
+                        <span class=" rotate-12 bg-[#eaeaea] w-[2px] h-[2.5rem] text-2xl"></span>
+                        <a href="#">
+                            <li class="hover:text-[#0655a4] active:text-[#0655a4] "> Contact us</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- This slider/ Banner -->
+        <section class="mt-[1%]  max-sm:w-96 ">
+            <div class="banner relative flex">
+                <!-- This is picture 1 -->
+                <div class="pic1">
+                    <img src="./banner_img.jpg" class="w-full max-sm:w-full">
+                </div>
+                <!-- This is Picture 2 -->
+                <div class="pic2">
+                    <img src="./banner_img_2.jpg" class="w-full max-sm:w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- This the second portion of Webpage -->
+        <section class=" mt-[4.375rem] flex justify-between max-sm:flex-wrap">
+            <div class="portion-1 w-[16.938rem] flex flex-col gap-y-3">
+                <h2 class="text-[26px] ml-6">ELECTTTESIGN</h2>
+                <div class="line border-b border-[#dbd6d0] w-full mb-4"></div>
+                <div class="shape w-full h-[20.625rem] bg-[#0655a4] flex items-center justify-center text-5xl mb-2">
+                    <i class="fa-solid fa-circle-plus fa-inverse"></i>
+                </div>
+                <div class="text font-lato pb-4">
+                    <h3 class="font-bold text-xl pb-4">Lorem ipsum dolor sit </h3>
+                    <p class="text-sm">Curabitur maximus tincidunt urna, vel varius sem consectetur a. In commodo nulla magna, eget ultrices orci euismod tristique. Phasellus eget arcu tincidunt.</p>
+                </div>
+                <div class="btn">
+                    <button class="w-[6.25rem] h-[2.687rem] bg-[#0655a4] border border-[#dbd6d0] rounded-md	 font-lato text-white ">MORE</button>
+                </div>
+            </div>
+            <div class="portion-2 w-[16.938rem] flex flex-col gap-y-3">
+                <h2 class="text-[26px]">ELECTRICAL INSTALLATION</h2>
+                <div class="line border-b border-[#dbd6d0] w-full mb-4"></div>
+                <div class="shape w-full h-[20.625rem] bg-[#0655a4] flex items-center justify-center text-5xl mb-2 bg-[url('./img_1.png')]">
+                </div>
+                <div class="text font-lato pb-4">
+                    <h3 class="font-bold text-xl pb-4">Aenean at ante dignissim</h3>
+                    <p class="text-sm">Curabitur maximus tincidunt urna, vel varius sem consectetur a. In commodo nulla magna, eget ultrices orci euismod tristique. Phasellus eget arcu tincidunt.</p>
+                </div>
+                <div class="btn">
+                    <button class="w-[6.25rem] h-[2.687rem] rounded-md border border-[#dbd6d0] font-lato text-black bg-[#ebebeb] hover:bg-[#0655a4] active:bg-[#0655a4] hover:text-white active:text-white">MORE</button>
+                </div>
+            </div>
+            <div class="portion-3 w-[16.938rem] flex flex-col gap-y-3">
+                <h2 class="text-[26px]">FIRE ALRAMS</h2>
+                <div class="line border-b border-[#dbd6d0] w-full mb-4"></div>
+                <div class="shape w-full h-[20.625rem] bg-[#0655a4] flex items-center justify-center text-5xl mb-2 bg-[url('./img_2.png')]">
+                </div>
+                <div class="text font-lato pb-4">
+                    <h3 class="font-bold text-xl pb-4">Etiam nulla augue</h3>
+                    <p class="text-sm">Curabitur maximus tincidunt urna, vel varius sem consectetur a. In commodo nulla magna, eget ultrices orci euismod tristique. Phasellus eget arcu tincidunt.</p>
+                </div>
+                <div class="btn">
+                    <button class="w-[6.25rem] h-[2.687rem] rounded-md border border-[#dbd6d0] font-lato text-black bg-[#ebebeb] hover:bg-[#0655a4] active:bg-[#0655a4] hover:text-white active:text-white">MORE</button>
+                </div>
+            </div>
+            <div class="portion-4 w-[16.938rem] flex flex-col gap-y-3">
+                <h2 class="text-[26px]">ACSESS CONTROL</h2>
+                <div class="line border-b border-[#dbd6d0] w-full mb-4"></div>
+                <div class="shape w-full h-[20.625rem] bg-[#0655a4] flex items-center justify-center text-5xl mb-2 bg-[url('./img_3.png')]">
+                </div>
+                <div class="text font-lato pb-4">
+                    <h3 class="font-bold text-xl pb-4">Quisque posuere libero</h3>
+                    <p class="text-sm">Curabitur maximus tincidunt urna, vel varius sem consectetur a. In commodo nulla magna, eget ultrices orci euismod tristique. Phasellus eget arcu tincidunt.</p>
+                </div>
+                <div class="btn">
+                    <button class="w-[6.25rem] h-[2.687rem] rounded-md border border-[#dbd6d0] font-lato text-black bg-[#ebebeb] hover:bg-[#0655a4] active:bg-[#0655a4] hover:text-white active:text-white">MORE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Line -->
+
+        <div class="line w-full border-b-2 border-[#eaeaea] mt-20 mb-[0.438rem]"></div>
+        <div class="line w-full border-b-2 border-[#eaeaea] mb-[4.5rem]"></div>
+
+
+        <!-- This is thrid portion of Webpage -->
+        <section class="mt-[4.375rem] flex justify-between ">
+            <div class="portion-1 w-[16.938rem] flex flex-col gap-y-4">
+                <div class="head flex flex-col gap-y-2">
+                <h2 class="text-2xl">WHAT WE DO?</h2>
+                <div class="line border-b border-[#dbd6d0] w-full "></div>
+                </div>
+                <div class="text font-lato">
+                    <h3 class="font-bold text-xl  pb-4">Lorem ipsum dolor sit </h3>
+                    <p class="text-sm">Curabitur maximus tincidunt urna, vel varius sem consectetur a. In commodo nulla magna, eget ultrices orci euismod tristique. Phasellus eget arcu tincidunt.</p>
+                </div>
+                <div class="btn">
+                    <button class="w-[6.25rem] h-[2.687rem] border border-[#dbd6d0] rounded-md font-lato text-black bg-[#ebebeb] hover:bg-[#0655a4] active:bg-[#0655a4] hover:text-white active:text-white">MORE</button>
+                </div>
+            </div>
+            <div class="portion-2 w-[16.938rem] flex flex-col gap-y-4">
+                <div class="head flex flex-col gap-y-2">
+                <h2 class="text-2xl">WHY CHOOSE US?</h2>
+                <div class="line border-b border-[#dbd6d0] w-full "></div>
+                </div>
+                <div class="text font-lato">
+                    <h3 class="font-bold text-xl  pb-4">Aenean at ante dignissim</h3>
+                    <p class="text-sm">Curabitur maximus tincidunt urna, vel varius sem consectetur a. In commodo nulla magna, eget ultrices orci euismod tristique. Phasellus eget arcu tincidunt.</p>
+                </div>
+                <div class="btn">
+                    <button class="w-[6.25rem] h-[2.687rem] rounded-md border border-[#dbd6d0] font-lato text-black bg-[#ebebeb] hover:bg-[#0655a4] active:bg-[#0655a4] hover:text-white active:text-white">MORE</button>
+                </div>
+            </div>
+            <div class="portion-3 w-[16.938rem] flex flex-col gap-y-4">
+                <div class="head flex flex-col gap-y-2">
+                <h2 class="text-2xl">WHO ARE WE?</h2>
+                <div class="line border-b border-[#dbd6d0] w-full"></div>
+            </div>
+                <div class="text font-lato">
+                    <h3 class="font-bold text-xl pb-4">Etiam nulla augue</h3>
+                    <p class="text-sm">Curabitur maximus tincidunt urna, vel varius sem consectetur a. In commodo nulla magna, eget ultrices orci euismod tristique. Phasellus eget arcu tincidunt.</p>
+                </div>
+                <div class="btn">
+                    <button class="w-[6.25rem] h-[2.687rem] rounded-md border border-[#dbd6d0] font-lato text-black bg-[#ebebeb] hover:bg-[#0655a4] active:bg-[#0655a4] hover:text-white active:text-white">MORE</button>
+                </div>
+            </div>
+            <div class="portion-4 w-[16.938rem] flex flex-col gap-y-4">
+                <div class="head flex flex-col gap-y-2">
+                <h2 class="text-2xl">TESTINOMIALS</h2>
+                <div class="line border-b border-[#dbd6d0] w-full"></div>
+            </div>
+                <div class="text font-lato">
+                    <h3 class="font-bold text-xl pb-4">Quisque posuere libero</h3>
+                    <p class="text-sm">Curabitur maximus tincidunt urna, vel varius sem consectetur a. In commodo nulla magna, eget ultrices orci euismod tristique. Phasellus eget arcu tincidunt.</p>
+                </div>
+                <div class="name"><p class="font-lato font-bold">Jhon Doe, Director</p></div>
+            </div>
+        </section>
+
+
+        <!-- This Footer -->
+        <footer class="mt-20 mb-[2.625rem] text-[#0655a4] flex justify-between font-semibold">
+            <p>Copyright © 2015, AB Foyster. All rights reserved</p>
+            <p>Website Created By WebCreationUK.com</p>
+        </footer>
+
+    </div>
+
+
+
+    <!-- Script Starts...! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.banner').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+    <script>
+        let items = document.querySelector(".itmes");
+        let menu = document.querySelector(".fa-bars");
+        
+        // items.style.display = "none" 
+
+        function Menu(){
+            if (menu.classList.contains("fa-bars")) {
+                items.style.display = "flex"
+                menu.classList.replace("fa-bars","fa-xmark");
+                
+            } else {
+                items.style.display = "none"
+                menu.classList.replace("fa-xmark","fa-bars");
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
